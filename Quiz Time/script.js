@@ -89,14 +89,12 @@ function showResults(){
  
     if(score===quizQuestions.length){
         resultMessage.textContent="Congratulations you are winner"
-        maxScoreSpan.textContent=`${quizQuestions.length}`
-        finalScoreSpan.textContent=`${score}`
     }else{
         resultMessage.textContent="Good effort! Keep learning"
 
     }
-            maxScoreSpan.textContent=`${score}`
-        finalScoreSpan.textContent=`${quizQuestions.length}`
+      finalScoreSpan.textContent=`${score}`
+      maxScoreSpan.textContent=`${quizQuestions.length}`
 }
 function selectAnswer(e){
 if(answerDisabled)return;
