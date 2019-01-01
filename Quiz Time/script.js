@@ -86,12 +86,19 @@ const showQuestion=()=>{
 function showResults(){
        quizScreen.classList.remove("active")
     resultScreen.classList.add("active")
- 
-    if(score===quizQuestions.length){
-        resultMessage.textContent="Congratulations you are winner"
-    }else{
-        resultMessage.textContent="Good effort! Keep learning"
+  const percentenge=(score/quizQuestions.length)*100
 
+    if(percentenge===100){
+        resultMessage.textContent="Perfecr You're a genuis"
+    }else if(percentenge>=80){
+        resultMessage.textContent="Great job! You konw your stuff!"
+
+    }else if(percentenge>=60){
+      resultMessage.textContent="Good effort! keep learning"
+    }else if(percentenge>=40){
+      resultMessage.textContent="Not bad! try again to improve"
+    }else{
+      resultMessage.textContent="Keep studing! You'll get better!";
     }
       finalScoreSpan.textContent=`${score}`
       maxScoreSpan.textContent=`${quizQuestions.length}`
