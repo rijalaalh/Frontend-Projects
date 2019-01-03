@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="addTaskBtn">+ Add Task</button>
+
+<dialog id="addTaskDialog">
+  <form method="dialog" id="addTaskForm">
+    <h3>Add New Task</h3>
+    <input type="text" id="taskInput" placeholder="Enter task..." required />
+    <div class="dialog-actions">
+      <button type="button" id="closeDialogBtn">Close</button>
+      <button type="submit" id="saveDialogBtn">Save</button>
+    </div>
+  </form>
+</dialog>
+    <div class="container">
+    <h1>Simple Kanban Board</h1>
+        <div class="board">
+            <div class="list" id="To-Do">
+                <h2>To Do</h2>
+
+            </div>
+            <div class="list" id="Progress">
+                <h2>In progress</h2>
+
+            </div>
+            <div class="list" id="Done">
+                <h2>Done</h2>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
