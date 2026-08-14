@@ -30,11 +30,11 @@ Nothing to install — this is a static site.
 
 1. Clone the repo
    ```bash
-   git clone https://github.com/your-username/color-palette-generator.git
+   https://github.com/rijalaalh/Frontend-Projects/tree/main/2-Color-palette-Generator
    ```
 2. Open the project folder
    ```bash
-   cd color-palette-generator
+   cd 2-Color-palette-Generator
    ```
 3. Open `index.html` in your browser
 
