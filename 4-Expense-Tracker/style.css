@@ -116,7 +116,7 @@ h2 {
 #transaction-list {
   list-style: none;
   margin-top: 20px;
-  max-height: 500px;
+  max-height: 400px;
   overflow-y: scroll;
   padding-right: 10px;
   flex-grow: 1;
@@ -133,7 +133,7 @@ h2 {
   -o-border-radius: 4px;
 }
 #transaction-list::-webkit-scrollbar-thumb {
-  background-color: rgb(214, 214, 214);
+  background-color: rgb(97, 96, 96);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
