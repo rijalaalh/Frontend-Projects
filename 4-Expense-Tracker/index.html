@@ -18,11 +18,11 @@
             <div class="summry">
                 <div class="income">
                     <h3>Income</h3>
-                    <p class="income-amount">$0.000</p>
+                    <p class="income-amount" id="income-amount">$0.000</p>
                 </div>
                 <div class="expenses">
                     <h3>Expenses</h3>
-                    <p class="expense-amount">$0.000</p>
+                    <p class="expense-amount" id="expense-amount">$0.000</p>
                 </div>
             </div>
         </div>
@@ -38,11 +38,11 @@
                 <form action="" id="transaction-form">
                     <div class="form-group">
                         <label for="">Description</label>
-                        <input type="text" placeholder="Enter description ..." required/>
+                        <input type="text" placeholder="Enter description ..." required id="description"/>
                     </div>
                     <div class="form-group">
                         <label for="">Amount</label>
-                        <input type="number" placeholder="Enter Amount ..." required/>
+                        <input type="number" placeholder="Enter Amount ..." required id="amount"/>
                         <small>use negative (-) for expenses</small>
                     </div>
                     <button type="submit">Add Transaction</button>
