@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmarke saver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bookmarker Saver</h1>
+        <!-- this is container is form to add a, book name and url  -->
+        <div class="form-container">
+            <input type="text" required placeholder="book Name ...." id="bookName">
+            <input type="url" required placeholder="https://exmplebook.com" id="urlbookName">
+            <button type="button" class="addbook" id="addbookbtn">Add bookmarker</button>
+        </div>
+        <!-- this div to add book with url i do it with js-->
+        <ul class="list-items" id="list-items">
+            <li><a href="#">My gihub profile</a>
+            <button type="button" class="deletebook" id="deletebookbtn" >Delete</button></li>
+        </ul>
+    </div>
+<script src="script.js" ></script>
+</body>
+</html>
