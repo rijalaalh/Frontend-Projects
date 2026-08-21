@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Password</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+    <h1>Generate Password</h1>
+    <div class="display-password">
+        <span id="password-display"></span>
+        <button id="copy-button"><img src="./content_copy_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"
+            alt="btn copy" id="img-copy"/></button>
+    </div>
+    <div class="options-password">
+        <div class="option">
+            <label for="length">Password Length:</label>
+            <input type="range" id="length" min="4" max="20" value="12">
+            <span id="length-value">12</span>
+        </div>
+        <div class="option">
+            <label for="include-uppercase">Include Uppercase</label>
+            <input type="checkbox" id="include-uppercase" checked>
+        </div>
+        <div class="option">
+            <label for="include-lowercase">Include Lowercase</label>
+            <input type="checkbox" id="include-lowercase" checked>
+        </div>
+        <div class="option">
+            <label for="include-numbers">Include Numbers</label>
+            <input type="checkbox" id="include-numbers" checked>
+        </div>
+        <div class="option">
+            <label for="include-symbols">Include Symbols</label>
+            <input type="checkbox" id="include-symbols" checked>
+        </div>
+    </div>
+    <button id="generate-button">Generate Password</button>
+    <div class="password-strength">
+        <span>Password strength:</span>
+        <span id="strength-value">strong</span>
+    </div>
+    <div class="strength-bar-container">
+        <span id="strength-bar"></span>
+    </div>
+ </div>
+<script src="script.js"></script>
+</body>
+</html>
